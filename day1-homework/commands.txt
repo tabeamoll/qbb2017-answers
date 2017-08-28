@@ -10,4 +10,5 @@ samtools sort mapping1 -o mapping1_sorted.bam
 samtools index mapping1_sorted.bam
 #get the samtool index
 
-
+stringtie ~/my_data/mapping1_sorted.bam -p 4 -e -G ~/my_data/BDGP6.Ensembl.81.gtf -o endoutput.gtf -B
+#get a Transcript quantitation
