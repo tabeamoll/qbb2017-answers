@@ -1,6 +1,13 @@
 fastqc SRR072893.fastq
 #generates the quality control
 
-hisat2 -p 4 -x ~/qbb2017-answers/day1-homework/BDGP6 -U ~/qbb2017-answers/day1-homework/SRR072893.fastq -S mapping1
+hisat2 -p 4 -x ~/my_data/BDGP6 -U ~/my_data/SRR072893.fastq -S mapping1
 #mapped our RNA seq data against the whole genome
+
+samtools sort mapping1 -o mapping1_sorted.bam
+#get the sam file sorted and convert into a bam file
+
+samtools index mapping1_sorted.bam
+#get the samtool index
+
 
