@@ -2,7 +2,7 @@
 
 import sys
 
-f = open(sys.argv[1]). 
+f = open(sys.argv[1])
 
 #filter out all the lines that do not contain DROME
 for line in f:
