@@ -27,23 +27,26 @@ seq2 = seq2[coi]
 merged = pd.merge(seq1,seq2, on=["t_name"], how="inner")
 
 
+
 #get rid of the columns with just 0.000
 #merged = merged[~(merged == 0).any(axis=1)]
 #get the log on those FPKM values, as you cant get the log(0)
-merged["FPKM_x"]=np.log(merged["FPKM_x"]+1)
-merged["FPKM_y"]=np.log(merged["FPKM_y"]+1)
+x = np.log(merged["FPKM_x"]+1)
+y = np.log(merged["FPKM_y"]+1)
 
 #print merged.head()
 
 plt.figure()
 #get the scatter plot for the merged, log adjusted file, make transparency (alpha) low and make the dots smaller (s)
-plt.scatter(merged["FPKM_x"], merged["FPKM_y"], alpha = 0.25, s=1)
-plt.xlabel("FPKM_893")                 
-plt.ylabel("FPKM_915")
+plt.scatter(x, y, alpha = 0.25, s=1)
+plt.xlabel("logn(FPKM *893)")                 
+plt.ylabel("logn(FPKM *915)")
 plt.title("Comparison FPKM of SRR072893 and SRR072915")
 #get the line fit
-fitty = np.polyfit(x=merged["FPKM_x"], y=merged["FPKM_y"], deg=1)
-plt.plot(merged["FPKM_x"], fitty[0]*merged["FPKM_x"] + fitty[1], "-")
+#fitty = np.polyfit(x=merged["FPKM_x"], y=merged["FPKM_y"], deg=1)
+#better use 
+plt.plot(np.unique(x), np.poly1d(np.polyfit(x,y, deg=1)) (np.unique(x)), c="red")
+# plt.plot(merged["FPKM_x"], fitty[0]*merged["FPKM_x"] + fitty[1], "-")
 plt.savefig(sys.argv[3] + ".png")
 plt.close()
 
