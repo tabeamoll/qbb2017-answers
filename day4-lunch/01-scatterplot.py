@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Usage: ./02-stratify.py <seq1> <seq2>
+Usage: ./01-scatterplot.py <seq1> <seq2>
 
 - 
 """
