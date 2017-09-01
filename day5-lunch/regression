@@ -1,27 +1,29 @@
+(4, 34718)
+(34718,)
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                      y   R-squared:                       0.000
-Model:                            OLS   Adj. R-squared:                 -0.000
-Method:                 Least Squares   F-statistic:                    0.4496
-Date:                Fri, 01 Sep 2017   Prob (F-statistic):              0.773
-Time:                        16:07:49   Log-Likelihood:            -2.0498e+05
-No. Observations:               34718   AIC:                         4.100e+05
-Df Residuals:                   34713   BIC:                         4.100e+05
+Dep. Variable:                      y   R-squared:                       0.031
+Model:                            OLS   Adj. R-squared:                  0.031
+Method:                 Least Squares   F-statistic:                     280.6
+Date:                Fri, 01 Sep 2017   Prob (F-statistic):          6.76e-238
+Time:                        17:07:54   Log-Likelihood:            -2.0443e+05
+No. Observations:               34718   AIC:                         4.089e+05
+Df Residuals:                   34713   BIC:                         4.089e+05
 Df Model:                           4                                         
 Covariance Type:            nonrobust                                         
 ==============================================================================
                  coef    std err          t      P>|t|      [0.025      0.975]
 ------------------------------------------------------------------------------
-const         13.5435      0.603     22.470      0.000      12.362      14.725
-x1            -0.1003      0.230     -0.436      0.663      -0.551       0.350
-x2             0.5063      0.395      1.282      0.200      -0.268       1.280
-x3            -0.3349      0.337     -0.995      0.320      -0.995       0.325
-x4            -0.0415      0.216     -0.192      0.847      -0.464       0.381
+const          4.1424      0.593      6.983      0.000       2.980       5.305
+x1             3.2577      0.226     14.398      0.000       2.814       3.701
+x2             4.0980      0.389     10.541      0.000       3.336       4.860
+x3            -3.0228      0.331     -9.122      0.000      -3.672      -2.373
+x4            -0.0726      0.212     -0.342      0.732      -0.488       0.343
 ==============================================================================
-Omnibus:                    86657.330   Durbin-Watson:                   1.857
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):       2416916013.516
-Skew:                          27.051   Prob(JB):                         0.00
-Kurtosis:                    1294.452   Cond. No.                         6.53
+Omnibus:                    87381.024   Durbin-Watson:                   1.943
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):       2626507306.311
+Skew:                          27.611   Prob(JB):                         0.00
+Kurtosis:                    1349.333   Cond. No.                         6.53
 ==============================================================================
 
 Warnings:
