@@ -1,0 +1,11 @@
+./blastn -db nr -query week1_query.fa -remote -evalue 1e-4 -num_alignments 1000 -outfmt "6 sseqid sseq" -out 1000_homologs
+
+
+
+awk '{gsub ("-","")}{print ">" $1 "\n" $2}' 1000_homologs_download.tsv > 1000_homologs.fa
+
+
+transeq 1000_homologs.fa 1000_n_prot.fa
+
+
+mafft 1000_n_prot.fa > alignment_prot.fa
