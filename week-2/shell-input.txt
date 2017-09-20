@@ -1,0 +1,18 @@
+
+time velveth ~/qbb2017-answers/week-2/velveth/ 31 -fastq reads_low_1.fastq reads_low_2.fastq
+
+velvetg ~/qbb2017-answers/week-2/velveth/
+
+/usr/local/bin/spades.py --12 reads_low_1.fastq --12 reads_low_2.fastq -o ~/qbb2017-answers/week-2/spades/
+
+
+lastz ~/qbb2017-answers/week-2/reference.fasta ~/qbb2017-answers/week-2/velveth/contigs.fa --chain --step=20 --nogapped --format=general:start1,size2,end1,name2 --output=velvet_lastz.tsv
+
+lastz ~/qbb2017-answers/week-2/reference.fasta ~/qbb2017-answers/week-2/spades/contigs.fasta --chain --step=20 --nogapped --format=general:start1,size2,end1,name2 --output=spades_lastz.tsv
+
+sort -k 1,1 -n velvet_lastz.tsv > sorted_velvet_lastz.tsv
+sort -k 1,1 -n spades_lastz.tsv > sorted_spades_lastz.tsv
+
+/usr/local/bin/spades.py --nanopore MAP006.subset.fa --12 reads_low_1.fastq --12 reads_low_2.fastq -o ~/qbb2017-answers/week-2/spades-long
+
+python /usr/bi/local/quast -t 16 <all contigs>
