@@ -1,0 +1,22 @@
+Assembly	spades_contigs	velveth_contigs	spades-long_contigs	spades2_contigs	velvet2_contigs
+# contigs (>= 0 bp)	123	305	64	2	11
+# contigs (>= 1000 bp)	3	0	18	1	7
+# contigs (>= 5000 bp)	0	0	3	1	7
+# contigs (>= 10000 bp)	0	0	0	1	4
+# contigs (>= 25000 bp)	0	0	0	1	1
+# contigs (>= 50000 bp)	0	0	0	1	0
+Total length (>= 0 bp)	46716	56973	70165	100026	100061
+Total length (>= 1000 bp)	3514	0	54576	99915	99562
+Total length (>= 5000 bp)	0	0	17908	99915	99562
+Total length (>= 10000 bp)	0	0	0	99915	81134
+Total length (>= 25000 bp)	0	0	0	99915	33235
+Total length (>= 50000 bp)	0	0	0	99915	0
+# contigs	19	11	23	1	7
+Largest contig	1409	998	6731	99915	33235
+Total length	14250	7243	58343	99915	99562
+GC (%)	51.43	50.71	52.38	52.58	52.58
+N50	718	632	4036	99915	19911
+N75	587	542	1961	99915	13440
+L50	8	5	6	1	2
+L75	13	8	11	1	4
+# N's per 100 kbp	0.00	0.00	0.00	0.00	0.00

@@ -1,0 +1,92 @@
+/usr/local/Cellar/quast/4.5/quast.py -o quast_result -t 16 /Users/cmdb/qbb2017-answers/week-2/spades/contigs.fasta /Users/cmdb/qbb2017-answers/week-2/velveth/contigs.fa /Users/cmdb/qbb2017-answers/week-2/spades-long/contigs.fasta /Users/cmdb/qbb2017-answers/week-2/spades2/contigs.fasta /Users/cmdb/qbb2017-answers/week-2/velvet2/contigs.fa
+
+Version: 4.5, 15ca3b9
+
+System information:
+  OS: Darwin-16.7.0-x86_64-i386-64bit (macosx)
+  Python version: 2.7.10
+  CPUs number: 4
+
+Started: 2017-09-20 18:56:23
+
+Logging to /Users/cmdb/qbb2017-answers/week-2/quast_result/quast.log
+
+CWD: /Users/cmdb/qbb2017-answers/week-2
+Main parameters: 
+  Threads: 16, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  1  /Users/cmdb/qbb2017-answers/week-2/spades/contigs.fasta ==> spades_contigs
+  2  /Users/cmdb/qbb2017-answers/week-2/velveth/contigs.fa ==> velveth_contigs
+  3  /Users/cmdb/qbb2017-answers/week-2/spades-long/contigs.fasta ==> spades-long_contigs
+  4  /Users/cmdb/qbb2017-answers/week-2/spades2/contigs.fasta ==> spades2_contigs
+  5  /Users/cmdb/qbb2017-answers/week-2/velvet2/contigs.fa ==> velvet2_contigs
+
+2017-09-20 18:56:24
+Running Basic statistics processor...
+  Contig files: 
+    1  spades_contigs
+    2  velveth_contigs
+    3  spades-long_contigs
+    4  spades2_contigs
+    5  velvet2_contigs
+  Calculating N50 and L50...
+    1  spades_contigs, N50 = 718, L50 = 8, Total length = 14250, GC % = 51.43, # N's per 100 kbp =  0.00
+    2  velveth_contigs, N50 = 632, L50 = 5, Total length = 7243, GC % = 50.71, # N's per 100 kbp =  0.00
+    3  spades-long_contigs, N50 = 4036, L50 = 6, Total length = 58343, GC % = 52.38, # N's per 100 kbp =  0.00
+    4  spades2_contigs, N50 = 99915, L50 = 1, Total length = 99915, GC % = 52.58, # N's per 100 kbp =  0.00
+    5  velvet2_contigs, N50 = 19911, L50 = 2, Total length = 99562, GC % = 52.58, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/GC_content_plot.pdf
+  Drawing spades_contigs GC content plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/spades_contigs_GC_content_plot.pdf
+  Drawing velveth_contigs GC content plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/velveth_contigs_GC_content_plot.pdf
+  Drawing spades-long_contigs GC content plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/spades-long_contigs_GC_content_plot.pdf
+  Drawing spades2_contigs GC content plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/spades2_contigs_GC_content_plot.pdf
+  Drawing velvet2_contigs GC content plot...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/velvet2_contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/coverage_histogram.pdf
+  Drawing spades_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/spades_contigs_coverage_histogram.pdf
+  Drawing velveth_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/velveth_contigs_coverage_histogram.pdf
+  Drawing spades-long_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/spades-long_contigs_coverage_histogram.pdf
+  Drawing spades2_contigs coverage histogram (bin size: 1x)...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/spades2_contigs_coverage_histogram.pdf
+  Drawing velvet2_contigs coverage histogram (bin size: 7x)...
+    saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/basic_stats/velvet2_contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2017-09-20 18:56:28
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2017-09-20 18:56:29
+RESULTS:
+  Text versions of total report are saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/report.html
+  PDF version (tables and plots) is saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/report.pdf
+  Icarus (contig browser) is saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/icarus.html
+  Log saved to /Users/cmdb/qbb2017-answers/week-2/quast_result/quast.log
+
+Finished: 2017-09-20 18:56:29
+Elapsed time: 0:00:06.359502
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
