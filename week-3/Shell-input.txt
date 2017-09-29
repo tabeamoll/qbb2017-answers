@@ -1,0 +1,30 @@
+Shell-Input
+
+tar xfv BYxRM_subset.tar.xv
+
+tar -xf Saccharomyces_cerevisiae_UCSC_sacCer3.tar
+
+bwa index genome.fa
+
+bwa mem -R '@RG\tID:foo\tSM:bar' -o <outout.sam> genome.fa.bwt <query.fq> 
+
+bwa mem -R '@RG\tID:foo\tSM:bar' -o A01_09.sam genome.fa.bwt A01_09.fq
+
+samtools sort <input.sam> -o <output.bam>
+
+samtools index <input_sorted.bam>
+
+freebayes -f genome.fa -0 -b A01_09_sort.bam A01_11_sort.bam A01_23_sort.bam A01_24_sort.bam A01_27_sort.bam A01_31_sort.bam A01_35_sort.bam A01_39_sort.bam A01_62_sort.bam A01_63_sort.bam -v unfiltered_freebayes
+
+vcffilter -f "QUAL > 100" unfiltered_freebayes > filtered_freebayes
+
+snpEff download R64-1-1.86
+
+
+
+tail -n+83 snpEff_output > filtered_freebayes_wohead.vcf
+
+sort -k 6 -r -n filtered_freebayes_wohead.vcf > filtered_freebayes_tophits.vcf
+
+less -S filtered_freebayes_tophits.vcf | head -5 > filtered_freebayes_top5.vcf
+
