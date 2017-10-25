@@ -1,0 +1,16 @@
+gunzip <file>
+
+brew install plink2
+
+Plink2 PCA
+
+plink2 --pca 2 tabs header --vcf BYxRM_segs_saccer3.bam.simplified.vcf --allow-extra-chr --mind
+
+./01-scatterplot.py plink.eigenvec pca-plot
+
+./02-histogram.py BYxRM_segs_saccer3.bam.simplified.vcf histogram-AF
+
+awk 'NR>1''{gsub ("_","\t")}{print}' BYxRM_PhenoData.txt > pheno.txt
+		#I then added a tab the first line manually :/
+
+plink2 --vcf BYxRM_segs_saccer3.bam.simplified.vcf --pheno pheno.txt --pca 2 header tabs --allow-no-sex --allow-extra-chr --linear --mind --all-pheno
