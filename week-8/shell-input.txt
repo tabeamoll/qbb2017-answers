@@ -1,0 +1,12 @@
+Normalize data
+
+hifive 5c-complete express -C Nora_ESC_male_E14.counts -P 001 Nora_Primers.bed
+
+Heatmap
+
+hifive 5c-heatmap 001.fcp 5Cfragment.heat -i 5Cheatmap_fragment.png -d fragment
+hifive 5c-heatmap 001.fcp 5Cenriched.heat -i 5Cheatmap_enriched.png -d enrichment
+
+Heatmap for working forward
+hifive 5c-heatmap -b 0 -a compact 001.fcp 5Cenriched_good.heat -F npz -i 5Cheatmap_enriched_good.png -d enrichment
+
