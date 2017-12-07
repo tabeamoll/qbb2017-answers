@@ -1,0 +1,29 @@
+ktImportText kraken83.txt kraken86.txt kraken88.txt kraken89.txt kraken90.txt kraken93.txt kraken94.txt kraken97.txt -o Krona_output.html
+
+grep ">" bin.X.fa
+
+grep 'NODE_14_length_235766_cov_39.967778' assembly.kraken
+grep 'NODE_25_length_133218_cov_37.848772' assembly.kraken
+grep 'NODE_40_length_102363_cov_33.084783' assembly.kraken
+grep 'NODE_30_length_116726_cov_3.835555' assembly.kraken
+grep 'NODE_66_length_80937_cov_3.162644' assembly.kraken
+grep 'NODE_184_length_42741_cov_3.497774' assembly.kraken
+grep 'NODE_24_length_157060_cov_6.639394' assembly.kraken
+grep 'NODE_51_length_90307_cov_7.345411' assembly.kraken
+grep 'NODE_57_length_86315_cov_6.829585' assembly.kraken
+grep 'NODE_1_length_1447137_cov_2268.097092' assembly.kraken
+grep 'NODE_2_length_556123_cov_2361.439230' assembly.kraken
+grep 'NODE_8_length_298793_cov_2547.011572' assembly.kraken
+grep 'NODE_4_length_455101_cov_112.371015' assembly.kraken
+grep 'NODE_6_length_320041_cov_123.475336' assembly.kraken
+grep 'NODE_7_length_310076_cov_130.336474' assembly.kraken
+grep 'NODE_20_length_181746_cov_381.691663' assembly.kraken
+grep 'NODE_29_length_119200_cov_370.287381' assembly.kraken
+grep 'NODE_41_length_101957_cov_389.183480' assembly.kraken
+grep 'NODE_12_length_269228_cov_106.168966' assembly.kraken
+grep 'NODE_21_length_175135_cov_99.919448' assembly.kraken
+grep 'NODE_22_length_170455_cov_103.210716' assembly.kraken
+grep 'NODE_3_length_498518_cov_181.760000' assembly.kraken
+grep 'NODE_5_length_427301_cov_143.861656' assembly.kraken
+grep 'NODE_15_length_235270_cov_153.562668' assembly.kraken
+
